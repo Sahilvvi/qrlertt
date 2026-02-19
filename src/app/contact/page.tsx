@@ -186,12 +186,12 @@ export default function ContactPage() {
                         </div>
                     </FadeIn>
                     <FadeIn direction="left" blur scale={0.9}>
-                        <div className="bg-white p-12 md:p-16 rounded-[4rem] shadow-[0_50px_100px_rgba(0,0,0,0.06)] border border-slate-100 flex flex-col gap-10 relative group">
-                            <div className="absolute top-12 right-12 bg-secondary/10 px-8 py-3 rounded-full flex items-center gap-3 border border-secondary/20">
+                        <div className="bg-white p-8 md:p-16 rounded-[3rem] md:rounded-[4rem] shadow-[0_50px_100px_rgba(0,0,0,0.06)] border border-slate-100 flex flex-col gap-8 md:gap-10 relative group">
+                            <div className="md:absolute md:top-12 md:right-12 bg-secondary/10 px-6 md:px-8 py-3 rounded-full flex items-center gap-3 border border-secondary/20 w-fit mb-4 md:mb-0">
                                 <div className="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse shadow-[0_0_10px_#00cccc]" />
                                 <span className="text-[10px] font-black uppercase text-secondary tracking-widest">Slots Available Today</span>
                             </div>
-                            <h3 className="text-4xl font-outfit font-black text-slate-800 tracking-tighter italic">February 2026</h3>
+                            <h3 className="text-3xl md:text-4xl font-outfit font-black text-slate-800 tracking-tighter italic">February 2026</h3>
                             <div className="grid grid-cols-7 gap-4 text-center">
                                 {["S", "M", "T", "W", "T", "F", "S"].map(d => <span key={d} className="text-[11px] font-black text-slate-300 uppercase tracking-widest">{d}</span>)}
                                 {Array.from({ length: 31 }).map((_, i) => (
@@ -296,11 +296,11 @@ export default function ContactPage() {
                                 transition={{ duration: 5, repeat: Infinity }}
                                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/10 rounded-full blur-[80px] pointer-events-none"
                             />
-                            <div className="w-32 h-32 bg-white rounded-[2.5rem] flex items-center justify-center mx-auto mb-12 shadow-[0_30px_80px_rgba(0,0,0,0.1)] relative z-10 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700 cursor-pointer">
-                                <MapPin className="w-12 h-12 text-primary animate-bounce" />
+                            <div className="w-24 h-24 md:w-32 md:h-32 bg-white rounded-[2rem] md:rounded-[2.5rem] flex items-center justify-center mx-auto mb-8 md:mb-12 shadow-[0_30px_80px_rgba(0,0,0,0.1)] relative z-10 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700 cursor-pointer">
+                                <MapPin className="w-10 h-10 md:w-12 md:h-12 text-primary animate-bounce" />
                             </div>
-                            <h3 className="text-4xl font-outfit font-black text-primary/40 uppercase tracking-[0.4em] mb-6 italic">Regional Headquarters</h3>
-                            <p className="text-primary/20 font-black text-[11px] uppercase tracking-[0.6em] bg-primary/5 py-3 px-8 rounded-full border border-primary/10 w-fit mx-auto">Siliguri, West Bengal Office</p>
+                            <h3 className="text-2xl md:text-4xl font-outfit font-black text-primary/40 uppercase tracking-[0.4em] mb-4 md:mb-6 italic">Regional Headquarters</h3>
+                            <p className="text-primary/20 font-black text-[9px] md:text-[11px] uppercase tracking-[0.4em] md:tracking-[0.6em] bg-primary/5 py-3 px-6 md:px-8 rounded-full border border-primary/10 w-fit mx-auto">Siliguri, West Bengal Office</p>
                         </div>
                     </FadeIn>
                 </div>

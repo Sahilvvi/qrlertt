@@ -31,7 +31,7 @@ const posts = [
         date: "Jan 28, 2026",
         author: "Cyber Specialist",
         tag: "Privacy",
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1563986768494-0d274431f158?auto=format&fit=crop&q=80&w=800"
     },
     {
         title: "The Environmental Impact of Reusable vs Single-Use ID Cards",
@@ -212,15 +212,15 @@ export default function BlogPage() {
             <Section className="bg-white overflow-hidden relative">
                 <div className="absolute top-[10%] left-[-5%] w-64 h-64 bg-slate-50 rounded-full blur-3xl pointer-events-none opacity-50" />
                 <div className="container relative z-10">
-                    <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:20 gap-8">
                         <div>
                             <FadeIn direction="right">
                                 <h4 className="text-secondary font-black uppercase tracking-[0.25em] text-[10px] mb-4">Library</h4>
-                                <h2 className="heading-lg">Resource <br /><span className="text-primary italic">Download Center.</span></h2>
+                                <h2 className="text-4xl md:text-5xl lg:text-7xl font-outfit font-black leading-[0.9] tracking-tighter">Resource <br /><span className="text-primary italic">Download Center.</span></h2>
                             </FadeIn>
                         </div>
                         <FadeIn direction="left">
-                            <Button variant="outline" className="border-slate-200 h-14 rounded-2xl px-8 font-black text-xs uppercase tracking-widest hover:bg-slate-50">View All Resources</Button>
+                            <Button variant="outline" className="border-slate-200 h-14 rounded-2xl px-8 font-black text-xs uppercase tracking-widest hover:bg-slate-50 w-full md:w-auto">View All Resources</Button>
                         </FadeIn>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -260,9 +260,9 @@ export default function BlogPage() {
                                     <input
                                         type="email"
                                         placeholder="Your work email"
-                                        className="flex-2 px-10 py-6 rounded-3xl bg-white/5 border border-white/10 focus:outline-none focus:ring-4 focus:ring-secondary/20 placeholder:text-white/20 text-white font-black text-xs uppercase tracking-widest"
+                                        className="flex-[2] px-8 md:px-10 py-5 md:py-6 rounded-2xl md:rounded-3xl bg-white/5 border border-white/10 focus:outline-none focus:ring-4 focus:ring-secondary/20 placeholder:text-white/20 text-white font-black text-[10px] md:text-xs uppercase tracking-widest"
                                     />
-                                    <Button size="lg" className="flex-1 h-20 rounded-3xl bg-secondary text-primary hover:bg-white transition-all transform active:scale-95 text-xs font-black uppercase tracking-widest shadow-2xl">
+                                    <Button size="lg" className="flex-1 h-16 md:h-20 rounded-2xl md:rounded-3xl bg-secondary text-primary hover:bg-white transition-all transform active:scale-95 text-[10px] md:text-xs font-black uppercase tracking-widest shadow-2xl">
                                         Subscribe Now
                                     </Button>
                                 </form>
