@@ -31,7 +31,7 @@ const posts = [
         date: "Jan 28, 2026",
         author: "Cyber Specialist",
         tag: "Privacy",
-        image: "https://images.unsplash.com/photo-1614064641935-447607e2c07a?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
     },
     {
         title: "The Environmental Impact of Reusable vs Single-Use ID Cards",
@@ -138,7 +138,7 @@ export default function BlogPage() {
                     {posts.map((post, i) => (
                         <FadeIn key={i} delay={i * 0.1} direction="up" scale={0.95}>
                             <div className="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl transition-all h-full flex flex-col hover:-translate-y-4 duration-500">
-                                <div className="aspect-[16/10] overflow-hidden relative">
+                                <div className="aspect-[16/10] overflow-hidden relative bg-slate-100">
                                     <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                     <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-md px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-[0.2em] text-primary flex items-center gap-2 shadow-2xl">
                                         <Tag className="w-3 h-3 text-secondary" />
