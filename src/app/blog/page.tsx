@@ -31,7 +31,7 @@ const posts = [
         date: "Jan 28, 2026",
         author: "Cyber Specialist",
         tag: "Privacy",
-        image: "https://images.unsplash.com/photo-1510511459019-5dee19a03071?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1614064641935-447607e2c07a?auto=format&fit=crop&q=80&w=800"
     },
     {
         title: "The Environmental Impact of Reusable vs Single-Use ID Cards",
