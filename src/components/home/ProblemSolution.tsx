@@ -72,31 +72,31 @@ export const ProblemSolution = () => {
                     </div>
                 </div>
 
-                <div className="relative">
+                <div className="relative mt-20 lg:mt-0">
                     <FadeIn direction="left" blur scale={0.9}>
-                        <div className="relative overflow-hidden rounded-[4rem] shadow-[0_50px_100px_rgba(0,0,0,0.1)] border-[12px] border-white group">
-                            <div className="bg-primary p-16 lg:p-24 text-center space-y-12 relative overflow-hidden">
+                        <div className="relative overflow-hidden rounded-[2.5rem] lg:rounded-[4rem] shadow-[0_50px_100px_rgba(0,0,0,0.1)] border-[8px] lg:border-[12px] border-white group">
+                            <div className="bg-primary p-8 sm:p-16 lg:p-24 text-center space-y-8 lg:space-y-12 relative overflow-hidden">
                                 {/* Inner glow */}
                                 <div className="absolute top-[-20%] right-[-10%] w-64 h-64 bg-secondary/10 blur-[100px] rounded-full pointer-events-none" />
 
                                 <motion.div
                                     whileHover={{ rotate: 360, scale: 1.1 }}
                                     transition={{ duration: 1 }}
-                                    className="w-24 h-24 bg-white/5 rounded-[2rem] flex items-center justify-center mx-auto border border-white/10 group-hover:bg-secondary group-hover:border-transparent transition-all duration-700"
+                                    className="w-16 h-16 lg:w-24 lg:h-24 bg-white/5 rounded-2xl lg:rounded-[2rem] flex items-center justify-center mx-auto border border-white/10 group-hover:bg-secondary group-hover:border-transparent transition-all duration-700"
                                 >
-                                    <CheckCircle2 className="w-12 h-12 text-secondary group-hover:text-primary transition-colors duration-700" />
+                                    <CheckCircle2 className="w-8 h-8 lg:w-12 lg:h-12 text-secondary group-hover:text-primary transition-colors duration-700" />
                                 </motion.div>
-                                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-outfit font-black text-white leading-[1.1] tracking-tighter">
+                                <h3 className="text-2xl sm:text-3xl lg:text-5xl font-outfit font-black text-white leading-[1.1] tracking-tighter">
                                     Secure Your DNA <br /> with the <span className="text-secondary italic">QrLert Edge.</span>
                                 </h3>
                                 <div className="pt-6">
-                                    <div className="grid grid-cols-2 gap-8">
-                                        <div className="bg-white/5 p-8 rounded-3xl border border-white/10 text-center hover:bg-white/10 transition-colors">
-                                            <p className="text-5xl font-black text-secondary tracking-tighter">99%</p>
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-8">
+                                        <div className="bg-white/5 p-6 lg:p-8 rounded-2xl lg:rounded-3xl border border-white/10 text-center hover:bg-white/10 transition-colors">
+                                            <p className="text-4xl lg:text-5xl font-black text-secondary tracking-tighter">99%</p>
                                             <p className="text-[10px] font-black uppercase tracking-widest text-white/40 mt-2">Forgery Halt</p>
                                         </div>
-                                        <div className="bg-white/5 p-8 rounded-3xl border border-white/10 text-center hover:bg-white/10 transition-colors">
-                                            <p className="text-5xl font-black text-secondary tracking-tighter">10ms</p>
+                                        <div className="bg-white/5 p-6 lg:p-8 rounded-2xl lg:rounded-3xl border border-white/10 text-center hover:bg-white/10 transition-colors">
+                                            <p className="text-4xl lg:text-5xl font-black text-secondary tracking-tighter">10ms</p>
                                             <p className="text-[10px] font-black uppercase tracking-widest text-white/40 mt-2">Sync Speed</p>
                                         </div>
                                     </div>

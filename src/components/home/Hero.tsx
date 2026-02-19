@@ -107,9 +107,9 @@ export const Hero = () => {
                                 style={{ x: float1X, y: float1Y }}
                             />
 
-                            {/* Floating Card 1 - Glassmorphism with Blue Accents */}
+                            {/* Floating Card 1 - Hide on mobile */}
                             <motion.div
-                                className="absolute -left-12 top-0 w-72 p-8 bg-white/95 backdrop-blur-xl rounded-[2.5rem] shadow-[0_40px_100px_rgba(0,0,0,0.2)] z-20 border border-blue-50"
+                                className="absolute -left-12 top-0 w-72 p-8 bg-white/95 backdrop-blur-xl rounded-[2.5rem] shadow-[0_40px_100px_rgba(0,0,0,0.2)] z-20 border border-blue-50 hidden md:block"
                                 style={{ x: float1X, y: float1Y }}
                                 animate={{ y: [0, -15, 0] }}
                                 transition={{ duration: 4, repeat: Infinity }}
@@ -175,9 +175,9 @@ export const Hero = () => {
                                 </div>
                             </motion.div>
 
-                            {/* Floating Analytics Card - Glassmorphism with Blue Accents */}
+                            {/* Floating Analytics Card - Hide on mobile */}
                             <motion.div
-                                className="absolute -right-20 bottom-10 w-72 p-8 bg-white/95 backdrop-blur-xl rounded-[3rem] shadow-[0_40px_100px_rgba(0,0,0,0.2)] z-20 border border-blue-50"
+                                className="absolute -right-20 bottom-10 w-72 p-8 bg-white/95 backdrop-blur-xl rounded-[3rem] shadow-[0_40px_100px_rgba(0,0,0,0.2)] z-20 border border-blue-50 hidden md:block"
                                 style={{ x: float2X, y: float2Y }}
                                 animate={{ y: [0, 15, 0] }}
                                 transition={{ duration: 6, repeat: Infinity, delay: 1 }}
