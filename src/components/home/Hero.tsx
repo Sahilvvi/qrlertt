@@ -144,8 +144,8 @@ export const Hero = () => {
 
                                     <div className="bg-slate-50 rounded-3xl p-6 border border-slate-100 aspect-square flex flex-col items-center justify-center relative overflow-hidden group">
                                         <div className="absolute inset-0 bg-primary/5 opacity-50" />
-                                        <div className="w-32 h-32 border-2 border-primary/20 rounded-2xl relative shadow-[0_10px_30px_rgba(0,45,98,0.05)] bg-white backdrop-blur-sm z-10 overflow-hidden text-primary">
-                                            <img src="/qrlert.png" alt="QR" className="w-full h-full object-cover opacity-20" />
+                                        <div className="w-32 h-32 border-2 border-primary/20 rounded-2xl relative shadow-[0_10px_30px_rgba(0,45,98,0.05)] bg-white backdrop-blur-sm z-10 overflow-hidden text-primary flex items-center justify-center">
+                                            <img src="/qrlert.png" alt="QR" className="w-20 h-20 object-contain opacity-30" />
                                             <motion.div
                                                 animate={{ y: [0, 120, 0] }}
                                                 transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}

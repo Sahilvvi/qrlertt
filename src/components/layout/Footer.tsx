@@ -12,7 +12,7 @@ export const Footer = () => {
                             <img
                                 src="/qrlert.png"
                                 alt="QrLert Logo"
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-contain p-1.5"
                             />
                         </div>
                         <span className="font-outfit text-2xl font-black tracking-tight text-white">
