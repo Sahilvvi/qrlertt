@@ -107,9 +107,9 @@ export const Hero = () => {
                                 style={{ x: float1X, y: float1Y }}
                             />
 
-                            {/* Floating Card 1 - High Contrast White */}
+                            {/* Floating Card 1 - Glassmorphism with Blue Accents */}
                             <motion.div
-                                className="absolute -left-12 top-0 w-72 p-8 bg-white rounded-[2.5rem] shadow-[0_40px_100px_rgba(0,0,0,0.1)] z-20 border border-slate-100"
+                                className="absolute -left-12 top-0 w-72 p-8 bg-white/95 backdrop-blur-xl rounded-[2.5rem] shadow-[0_40px_100px_rgba(0,0,0,0.2)] z-20 border border-blue-50"
                                 style={{ x: float1X, y: float1Y }}
                                 animate={{ y: [0, -15, 0] }}
                                 transition={{ duration: 4, repeat: Infinity }}
@@ -119,51 +119,49 @@ export const Hero = () => {
                                         <ShieldCheck className="text-white w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="text-md font-black text-slate-900 leading-tight">Security Plus</h4>
-                                        <p className="text-[10px] text-slate-400 font-bold uppercase tracking-wider mt-1">AES-256 Enabled</p>
+                                        <h4 className="text-md font-black text-primary leading-tight">Security Plus</h4>
+                                        <p className="text-[10px] text-secondary font-black uppercase tracking-wider mt-1">AES-256 Enabled</p>
                                     </div>
                                 </div>
                                 <div className="space-y-3">
-                                    <div className="h-2 w-full bg-slate-100 rounded-full" />
-                                    <div className="h-2 w-3/4 bg-slate-50 rounded-full" />
+                                    <div className="h-2 w-full bg-blue-50 rounded-full" />
+                                    <div className="h-2 w-3/4 bg-blue-50/50 rounded-full" />
                                 </div>
                             </motion.div>
 
-                            {/* Main Phone Mockup - Responsive width */}
+                            {/* Main Phone Mockup - Responsive width and blue tinted frame */}
                             <motion.div
-                                className="relative z-10 w-[260px] sm:w-[300px] h-[520px] sm:h-[600px] bg-white rounded-[3.5rem] border-[10px] border-slate-100 shadow-2xl overflow-hidden shrink-0"
+                                className="relative z-10 w-[260px] sm:w-[300px] h-[520px] sm:h-[600px] bg-white rounded-[3.5rem] border-[10px] border-blue-50/50 shadow-2xl overflow-hidden shrink-0"
                                 style={{ x: springX.get() * 0.05, y: springY.get() * 0.05 }}
                             >
                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-slate-100 rounded-b-xl z-30" />
                                 <div className="w-full h-full bg-white relative flex flex-col pt-16 px-6">
                                     <div className="flex justify-between items-center mb-10">
-                                        <div className="w-8 h-8 rounded-lg bg-slate-50 border border-slate-100" />
-                                        <div className="h-4 w-20 bg-slate-100 rounded-full" />
-                                        <div className="w-8 h-8 rounded-lg bg-slate-50 border border-slate-100" />
+                                        <div className="w-8 h-8 rounded-lg bg-blue-50 border border-blue-100" />
+                                        <div className="h-4 w-20 bg-blue-50 rounded-full" />
+                                        <div className="w-8 h-8 rounded-lg bg-blue-50 border border-blue-100" />
                                     </div>
 
                                     <div className="bg-slate-50 rounded-3xl p-6 border border-slate-100 aspect-square flex flex-col items-center justify-center relative overflow-hidden group">
                                         <div className="absolute inset-0 bg-primary/5 opacity-50" />
-                                        <div className="w-32 h-32 border-2 border-primary/20 rounded-2xl relative shadow-[0_10px_30px_rgba(0,45,98,0.05)] bg-white backdrop-blur-sm z-10 overflow-hidden">
+                                        <div className="w-32 h-32 border-2 border-primary/20 rounded-2xl relative shadow-[0_10px_30px_rgba(0,45,98,0.05)] bg-white backdrop-blur-sm z-10 overflow-hidden text-primary">
+                                            <img src="/qrlert.png" alt="QR" className="w-full h-full object-cover opacity-20" />
                                             <motion.div
                                                 animate={{ y: [0, 120, 0] }}
                                                 transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
-                                                className="absolute top-0 left-0 right-0 h-[3px] bg-primary opacity-20 shadow-[0_0_10px_rgba(0,45,98,0.2)] z-20"
+                                                className="absolute top-0 left-0 right-0 h-[3px] bg-secondary shadow-[0_0_10px_rgba(0,204,204,1)] z-20"
                                             />
-                                            <div className="absolute inset-0 flex items-center justify-center p-6 opacity-40">
-                                                <div className="w-full h-full border-4 border-dashed border-primary/10 rounded-xl" />
-                                            </div>
                                         </div>
-                                        <p className="mt-8 text-[10px] font-black uppercase text-primary tracking-widest animate-pulse opacity-40">Scanning Active</p>
+                                        <p className="mt-8 text-[10px] font-black uppercase text-secondary tracking-widest animate-pulse">Scanning Active</p>
                                     </div>
 
                                     <div className="mt-10 space-y-4">
                                         {[1, 2, 3].map(i => (
                                             <div key={i} className="flex gap-4 items-center">
-                                                <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100" />
+                                                <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100" />
                                                 <div className="flex-1 space-y-2">
-                                                    <div className="h-2 w-1/2 bg-slate-100 rounded-full" />
-                                                    <div className="h-1.5 w-1/3 bg-slate-50 rounded-full" />
+                                                    <div className="h-2 w-1/2 bg-blue-50 rounded-full" />
+                                                    <div className="h-1.5 w-1/3 bg-blue-50/50 rounded-full" />
                                                 </div>
                                             </div>
                                         ))}
@@ -177,19 +175,19 @@ export const Hero = () => {
                                 </div>
                             </motion.div>
 
-                            {/* Floating Analytics Card - High Contrast White */}
+                            {/* Floating Analytics Card - Glassmorphism with Blue Accents */}
                             <motion.div
-                                className="absolute -right-20 bottom-10 w-72 p-8 bg-white rounded-[3rem] shadow-[0_40px_100px_rgba(0,0,0,0.1)] z-20 border border-slate-100"
+                                className="absolute -right-20 bottom-10 w-72 p-8 bg-white/95 backdrop-blur-xl rounded-[3rem] shadow-[0_40px_100px_rgba(0,0,0,0.2)] z-20 border border-blue-50"
                                 style={{ x: float2X, y: float2Y }}
                                 animate={{ y: [0, 15, 0] }}
                                 transition={{ duration: 6, repeat: Infinity, delay: 1 }}
                             >
                                 <div className="flex justify-between items-center mb-6">
-                                    <h4 className="text-[10px] font-black uppercase text-slate-400 tracking-widest">Efficiency</h4>
+                                    <h4 className="text-[10px] font-black uppercase text-secondary tracking-widest">Efficiency</h4>
                                     <CheckCircle2 className="w-5 h-5 text-primary" />
                                 </div>
-                                <p className="text-4xl font-black mb-1 text-slate-900 tracking-tighter">98.4%</p>
-                                <p className="text-[10px] text-slate-400 font-bold uppercase tracking-wider whitespace-nowrap">Auto-Sync Accuracy</p>
+                                <p className="text-4xl font-black mb-1 text-primary tracking-tighter">98.4%</p>
+                                <p className="text-[10px] text-primary/40 font-bold uppercase tracking-wider whitespace-nowrap">Auto-Sync Accuracy</p>
                                 <div className="mt-8 flex gap-2 h-16 items-end">
                                     {[30, 60, 45, 90, 65, 80].map((h, i) => (
                                         <motion.div
@@ -197,7 +195,7 @@ export const Hero = () => {
                                             initial={{ height: 0 }}
                                             animate={{ height: `${h}%` }}
                                             transition={{ delay: 1 + i * 0.1, duration: 1 }}
-                                            className="flex-1 bg-primary/10 rounded-t-lg hover:bg-primary transition-colors cursor-pointer"
+                                            className={`flex-1 rounded-t-lg transition-colors cursor-pointer ${i % 2 === 0 ? 'bg-primary/20 hover:bg-primary' : 'bg-secondary hover:bg-secondary/80'}`}
                                         />
                                     ))}
                                 </div>
